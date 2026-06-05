@@ -35,6 +35,7 @@ public class FileSystemSimulator implements Serializable {
             for (Arquivo f : d.getArquivos()) {
                 if (f.getNome().equals(antigo)) {
                     f.setNome(novo);
+                    salvarSistema();
 
                     journal.registrar("renomearArquivo " + antigo + " -> " + novo);
 
@@ -48,6 +49,7 @@ public class FileSystemSimulator implements Serializable {
             if (d.getNome().equals(antigo)) {
 
                 d.setNome(novo);
+                salvarSistema();
 
                 journal.registrar("renomearDiretorio " + antigo + " -> " + novo);
 
@@ -61,6 +63,7 @@ public class FileSystemSimulator implements Serializable {
                 if (d.getArquivos().get(i).getNome().equals(nomeArquivo)) {
 
                     d.getArquivos().remove(i);
+                    salvarSistema();
 
                     journal.registrar("apagarArquivo " + nomeArquivo);
 
@@ -74,6 +77,7 @@ public class FileSystemSimulator implements Serializable {
             if (diretorios.get(i).getNome().equals(nome)) {
 
                 diretorios.remove(i);
+                salvarSistema();
 
                 journal.registrar("apagarDiretorio " + nome);
 
@@ -86,6 +90,8 @@ public class FileSystemSimulator implements Serializable {
             for (Arquivo f : d.getArquivos()) {
                 if (f.getNome().equals(origem)) {
                     d.getArquivos().add(new Arquivo(copia));
+                    salvarSistema();
+
                     journal.registrar("cpiarArquivo " + origem + " -> " + copia);
 
                     return;

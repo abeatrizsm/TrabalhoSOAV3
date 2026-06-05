@@ -145,3 +145,24 @@ renomearDiretorio Musicas -> Audio
 apagarArquivo filme.mp4
 apagarArquivo praia_backup.jpg
 apagarDiretorio Audio
+criarDiretorio Documentos
+criarDiretorio Fotos
+criarDiretorio Videos
+criarDiretorio Musicas
+criarArquivo trabalhoAV3_SistOperacional.docx
+criarArquivo anotacoes_Aula14_SistemaDeArquivos.txt
+criarArquivo praiaParacuru.jpg
+criarArquivo familia.jpg
+criarArquivo aulaHuawei.mp4
+criarArquivo filme.mp4
+criarArquivo rock.mp3
+criarArquivo pop.mp3
+cpiarArquivo trabalhoAV3_SistOperacional.docx -> trabalhoSOAV3_backup.docx
+cpiarArquivo praiaParacuru.jpg -> praia_backup.jpg
+renomearArquivo anotacoes_Aula14_SistemaDeArquivos.txt -> resumoAula14.txt
+renomearArquivo rock.mp3 -> rock_legiãoUrbana.mp3
+renomearDiretorio Videos -> Filmes
+renomearDiretorio Musicas -> Audio
+apagarArquivo filme.mp4
+apagarArquivo praia_backup.jpg
+apagarDiretorio Audio
