@@ -24,13 +24,13 @@ Desenvolver um simulador de sistema de arquivos que implemente funcionalidades b
 
 O simulador deve permitir:
 
-* Copiar arquivos;
-* Apagar arquivos;
-* Renomear arquivos;
-* Criar diretórios;
-* Apagar diretórios;
-* Renomear diretórios;
-* Listar arquivos de um diretório.
+* Copiar arquivos
+* Apagar arquivos
+* Renomear arquivos
+* Criar diretórios
+* Apagar diretórios
+* Renomear diretórios
+* Listar arquivos de um diretório
 
 Além disso, cada operação executada deve ser registrada em um arquivo de journal para possibilitar o acompanhamento das alterações realizadas durante a execução do sistema.
 
